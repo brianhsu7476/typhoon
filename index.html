@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>颱風</title>
+</head>
+<body>
+	<h1>颱風</h1>
+	<p>想要製造自己的颱風天嗎？可以上傳圖片以獲得做成颱風結果喔！</p>
+	<p>1. 輸入颱風中心與扭曲程度<br>2. 上傳要做成颱風的圖片<br>3. 點擊更新預覽颱風扭曲程度<br>4. 確認之後按下製作颱風天（需要跑一陣子）即可獲得做成颱風後的圖片</p>
+	<p>颱風中心： x: <input type='number' id='cy' autofocus> ， y (往下遞增): <input type='number' id='cx' autofocus></p>
+	<p>扭曲程度（輸入負值可以獲得南半球的颱風）： <input type='number' id='radius' autofocus></p>
+	<p><input type='file' id='imageInput' accept='image/*'/><br></p>
+	<p><input type='button' value='更新！' onclick='upd()'>
+	<input type='button' value='製作颱風天！' onclick='inverse()'></p>
+	<p id='text1'></p>
+	<p id='button1'></p>
+	<canvas id='original' hidden></canvas>
+	<canvas id='circle'></canvas>
+	<canvas id='inversion'></canvas>
+	<script src='game.js'></script>
+</body>
+</html>
+
